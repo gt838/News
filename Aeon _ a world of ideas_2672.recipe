@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import AutomaticNewsRecipe
+
+class BasicUserRecipe1795266770(AutomaticNewsRecipe):
+    title          = 'Aeon | a world of ideas'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('Aeon | a world of ideas', 'https://aeon.co/feed.rss'),
+    ]
